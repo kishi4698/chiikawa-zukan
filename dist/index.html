@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ちいかわ名言・エピソード図鑑</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #fefcf0; color: #4a4a4a; margin: 0; padding: 0; }
+        .header { background-color: #ffe17d; padding: 40px 20px; border-bottom: 4px solid #f39c12; text-align: center; }
+        h1 { margin: 0; color: #d35400; font-size: 28px; }
+        .sub-title { font-size: 14px; color: #7f8c8d; margin-top: 5px; }
+        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+        
+        /* カード全体のスタイル */
+        .episode-card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border: 2px solid #ffe17d; margin-bottom: 30px; display: flex; gap: 20px; align-items: flex-start; }
+        .card-content { flex: 1; }
+        
+        /* キャラクターバッジ */
+        .character { font-weight: bold; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 12px; font-size: 13px; text-shadow: 1px 1px 0px rgba(255,255,255,0.5); }
+        .chiikawa { background-color: #ffebf0; color: #e84393; border: 1px solid #fab1a0; }
+        .hachiware { background-color: #e8f4fd; color: #0984e3; border: 1px solid #74b9ff; }
+        .usagi { background-color: #fff9e6; color: #d35400; border: 1px solid #ffe17d; }
+        .rakko { background-color: #f2f2f2; color: #2d3436; border: 1px solid #b2bec3; }
+        
+        .quote { font-size: 20px; font-weight: bold; color: #2c3e50; margin: 5px 0 15px 0; border-left: 5px solid #f1c40f; padding-left: 12px; line-height: 1.4; }
+        .description { font-size: 15px; line-height: 1.7; color: #555; }
+        
+        /* 画像のスタイル */
+        .character-img { width: 140px; height: 140px; border-radius: 12px; object-fit: cover; border: 2px solid #f1c40f; background-color: #fafafa; flex-shrink: 0; }
+        
+        @media (max-width: 600px) {
+            .episode-card { flex-direction: column; align-items: center; text-align: center; }
+            .character-img { width: 100%; height: 180px; }
+            .quote { border-left: none; padding-left: 0; border-bottom: 2px solid #f1c40f; padding-bottom: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>📖 ちいかわ名言・エピソード図鑑</h1>
+        <div class="sub-title">（裏側はAWS ＋ GitHub Actionsの最強サーバーレス構成…ってコト！？）</div>
+    </div>
+
+    <div class="container">
+
+        <div class="episode-card">
+            <img src="images/chiikawa.jpg" alt="ちいかわ" class="character-img" onerror="this.src='https://placehold.co/150?text=Chiikawa'">
+            <div class="card-content">
+                <span class="character chiikawa">ちいかわ</span>
+                <div class="quote">「…ワッ…！」</div>
+                <div class="description">
+                    ちいかわが驚いた時、嬉しい時、あるいはピンチの時に発する代表的な言葉。言葉にはなりませんが、ちいかわのピュアな感情が120% 詰まっており、ハチワレにはなぜか正確にニュアンスが伝わっています。
+                </div>
+            </div>
+        </div>
+
+        <div class="episode-card">
+            <img src="images/hachiware.jpg" alt="ハチワレ" class="character-img" onerror="this.src='https://placehold.co/150?text=Hachiware'">
+            <div class="card-content">
+                <span class="character hachiware">ハチワレ</span>
+                <div class="quote">「なんとかなれー！」</div>
+                <div class="description">
+                    ピンチに陥った時、ハチワレが自分を奮い立たせるために叫ぶ名言。これを言いながら放つ「討伐」の一撃は強力。トラブルに直面したエンジニアが、深夜のデプロイ時に心の中で最も唱える言葉でもあります。
+                </div>
+            </div>
+        </div>
+
+        <div class="episode-card">
+            <img src="images/usagi.jpg" alt="うさぎ" class="character-img" onerror="this.src='https://placehold.co/150?text=Usagi'">
+            <div class="card-content">
+                <span class="character usagi">うさぎ</span>
+                <div class="quote">「ウラララララァーーッ！！」</div>
+                <div class="description">
+                    常にハイテンションで実力派のうさぎが放つ咆哮。言葉は通じないものの、草むしり検定3級をサラッと取得するほどの圧倒的な戦闘力と頭脳を持っており、ピンチの時は一番頼りになる存在です。
+                </div>
+            </div>
+        </div>
+
+        <div class="episode-card">
+            <img src="images/rakko.jpg" alt="ラッコ先生" class="character-img" onerror="this.src='https://placehold.co/150?text=Rakko'">
+            <div class="card-content">
+                <span class="character rakko">ラッコ先生</span>
+                <div class="quote">「強くなるための…糧にしろ」</div>
+                <div class="description">
+                    討伐ランキング上位のランカーであり、ちいかわたちの憧れの師匠。厳しい言葉の裏に深い優しさがあり、彼からもらう「報酬（お肉）」と、スイーツを食べて顔をほころばせるギャップがむちゃうまです。
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
